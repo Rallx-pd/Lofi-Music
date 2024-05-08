@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Radio Fi é uma personificação de uma biblioteca digita, para usar como sua radio online.
 
-- [Acesse o projeto finalizado, online]
+- [Acesse o projeto finalizado, online] https://rallx-pd.github.io/Radiofi-Music/
 
 <p aling="center">
 <img alt="Radio Fi" src="https://github.com/Rallx-pd/Radiofi-Music/assets/163781219/cd831112-5bf2-4215-b150-98bc348c3e7a" width="100%">
