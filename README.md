@@ -18,7 +18,7 @@ Biblioteca de musica com player view e CSS animado. <br/>
 <br>
 
 <p align="center">
-  <img alt="Radio Fi" src="![Tela 1](https://github.com/Rallx-pd/Radiofi-Music/assets/163781219/65a115de-50ab-468a-b826-20d7121ff52f)" width="100%">
+  <img alt="Radio Fi" src="https://github.com/Rallx-pd/Radiofi-Music/assets/163781219/65a115de-50ab-468a-b826-20d7121ff52f" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -34,6 +34,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O Radio Fi é uma personificação de uma biblioteca digita, para usar como sua radio online.
 
 - [Acesse o projeto finalizado, online]
+
+<p aling="center">
+<img alt="Radio Fi" src="https://github.com/Rallx-pd/Radiofi-Music/assets/163781219/cd831112-5bf2-4215-b150-98bc348c3e7a" width="100%">
+</p>
 
 ## :memo: Licença
 
