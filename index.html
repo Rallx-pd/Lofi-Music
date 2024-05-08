@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="src/style/style.css">
+  <link rel="stylesheet" href="src/style/music.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <title>RadioFi Music</title>
+</head>
+<body>
+    <header>
+      <nav id="navbar">
+        <i class="fa-solid fa-radio" id="nav_logo"> Fi Music</i>
+
+          <ul id="nav_list">
+            <li class="nav-item active">
+              <a href="#home"></a>
+              <a href="#time"></a>
+              <a href="#data"></a>
+            </li>
+          </ul>
+          <button class="btn-default">
+            Add Music
+          </button>
+
+          <button id="mobile_btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+      </nav>
+
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <li class="nav-item">
+            <a href="#home">Inicio</a>
+            <a href="#time">Playlist</a>
+            <a href="#data">Relogio</a>
+          </li>
+        </ul>
+
+        <button class="btn-default">
+          Add Music
+        </button>
+
+      </div>
+      
+    </header>
+    
+    <main id="content">
+      <section id="home">
+        <div class="shape"></div>
+        <div id="cta">
+          <h1 class="title">Monte sua
+            <span>Radio</span>
+          </h1>
+            
+          <p class="description">Nada melhor que ter sua radio exclusiva para estudar</p>
+        
+          <div id="cta_button">
+            <a href="#" class="btn-default">Catalogo</a>
+
+          </div>
+
+        </div>
+
+        <!-- imagem -->
+        <div id="banner">
+          <img src="src/img/btn-image 1.png" height="522px"  alt="homem negro de fone e oculos futurias ">
+        </div> 
+      </section>
+
+      <!-- Play View -->
+      <section id="menu">
+        <h2 class="section-title">Playlist</h2>
+        <h3 class="section-subtitle">Recomendações</h3>
+
+        <!-- Players Div -->
+          <div id="dishes">
+            <div class="dish">
+              <div class="dish-heart">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+
+              <img src="src/img/Brocasito.jpg" height="140px" class="dish-image" alt=""> 
+
+              <h3 class="dish-title">
+                Plug
+              </h3>
+
+              <div class="player">
+
+                <span class="dish-description">
+                  Brocasito - Tantos Pla
+                </span>
+              
+                <audio id="player" src="./src/javascript/sogns/play-1.js"></audio>
+
+                <div class="controls">
+                  <button id="prevButton">
+                    <i class="fa-solid fa-step-backward"></i>
+                  </button>
+
+                  <button id="PlayPauseButton">
+                    <i class="fa-solid fa-play-circle"></i>
+                  </button>
+
+                  <button id="nextButton">
+                    <i class="fa-solid fa-step-forward"></i>
+                  </button>
+                </div>
+
+                <div class="previw">
+                  <div class="progress-bar">
+                    <div class="progress"></div>
+                  </div>
+                </div>
+
+                <div class="time">
+                  <span id="currentTime"></span>
+                  <span id="duration"></span>
+                </div>
+
+                <div class="dish-rate">
+                 
+                </div>
+              </div>
+                
+              <div id="dish-price">
+               <button class="btn-default">
+                <i class="fa-solid fa-plus-square" aria-hidden="true"></i>
+               </button>
+              </div>
+
+            </div>
+
+            <div class="dish">
+              <div class="dish-heart">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+
+              <img src="src/img/XXX.jpg" height="140px" class="dish-image" alt=""> 
+
+              <h3 class="dish-title">
+                Sad
+              </h3>
+
+              <div class="player">
+
+                <span class="dish-description">
+                  XXXTENTACION - Infi
+                </span>
+              
+                <audio id="player" src="./src/javascript/sogns/play-2.js"></audio>
+
+                <div class="controls">
+                  <button id="prevButton">
+                    <i class="fa-solid fa-step-backward"></i>
+                  </button>
+
+                  <button id="PlayPauseButton">
+                    <i class="fa-solid fa-play-circle"></i>
+                  </button>
+
+                  <button id="nextButton">
+                    <i class="fa-solid fa-step-forward"></i>
+                  </button>
+                </div>
+
+                <div class="previw">
+                  <div class="progress-bar">
+                    <div class="progress"></div>
+                  </div>
+                </div>
+
+                <div class="time">
+                  <span id="currentTime"></span>
+                  <span id="duration"></span>
+                </div>
+
+                <div class="dish-rate">
+                 
+                </div>
+              </div>
+
+              <div id="dish-price">
+               <button class="btn-default">
+                <i class="fa-solid fa-plus-square" aria-hidden="true"></i>
+               </button>
+              </div>
+
+            </div>
+
+            <div class="dish">
+              <div class="dish-heart">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+
+              <img src="src/img/Playboi.jpg" height="140px" class="dish-image" alt=""> 
+
+              <h3 class="dish-title">
+                Baby
+              </h3>
+
+              <div class="player">
+
+                <span class="dish-description">
+                  Playboi Carti - ILove
+                </span>
+              
+                <audio id="player" src="./src/javascript/sogns/play-3.js"></audio>
+
+                <div class="controls">
+                  <button id="prevButton">
+                    <i class="fa-solid fa-step-backward"></i>
+                  </button>
+
+                  <button id="PlayPauseButton">
+                    <i class="fa-solid fa-play-circle"></i>
+                  </button>
+
+                  <button id="nextButton">
+                    <i class="fa-solid fa-step-forward"></i>
+                  </button>
+                </div>
+
+                <div class="previw">
+                  <div class="progress-bar">
+                    <div class="progress"></div>
+                  </div>
+                </div>
+
+                <div class="time">
+                  <span id="currentTime"></span>
+                  <span id="duration"></span>
+                </div>
+
+                <div class="dish-rate">
+                 
+                </div>
+              </div>
+
+              <div id="dish-price">
+               <button class="btn-default">
+                <i class="fa-solid fa-plus-square" aria-hidden="true"></i>
+               </button>
+              </div>
+
+            </div>
+
+            <div class="dish">
+              <div class="dish-heart">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+
+              <img src="src/img/iza.jpg" height="140px" class="dish-image" alt=""> 
+
+              <h3 class="dish-title">
+                RnB
+              </h3>
+
+              <div class="player">
+
+                <span class="dish-description">
+                  Summer Walker - White 
+                </span>
+              
+                <audio id="player" src="./src/javascript/sogns/play-4.js"></audio>
+
+                <div class="controls">
+                  <button id="prevButton">
+                    <i class="fa-solid fa-step-backward"></i>
+                  </button>
+
+                  <button id="PlayPauseButton">
+                    <i class="fa-solid fa-play-circle"></i>
+                  </button>
+
+                  <button id="nextButton">
+                    <i class="fa-solid fa-step-forward"></i>
+                  </button>
+                </div>
+
+                <div class="previw">
+                  <div class="progress-bar">
+                    <div class="progress"></div>
+                  </div>
+                </div>
+
+                <div class="time">
+                  <span id="currentTime"></span>
+                  <span id="duration"></span>
+                </div>
+
+                <div class="dish-rate">
+               
+                </div>
+              </div>
+              
+              <div id="dish-price">
+               <button class="btn-default">
+                <i class="fa-solid fa-plus-square" aria-hidden="true"></i>
+               </button>
+              </div>
+
+            </div>
+          </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+    
+
+      <div id="footer_items">
+        <span id="copyright">
+          &copy 2024 Leonardo Vinicius
+        </span>
+
+        <div class="social-media-button">
+
+          <a href="https://wa.me/5511914824842" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href="https://www.instagram.com/rallx_pd/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://www.youtube.com/@rallxprod9113" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a href="https://github.com/Rallx-pd" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+        </div>
+
+      </div>
+    </footer>
+
+    <script type="module" src="src/javascript/sogns/songs.js"></script>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
