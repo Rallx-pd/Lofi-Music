@@ -70,3 +70,22 @@
 .section-subtitle {
   font-size: 2.1875rem;
 }
+
+
+@media screen and (max-width: 1170px) {
+  #home {
+    min-height: 100%;
+    padding-top: 0px;
+  }
+
+  #banner,
+  #banner img {
+    display: none;
+  }
+
+  #cta {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}

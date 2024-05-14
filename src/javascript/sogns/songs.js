@@ -1,84 +1,65 @@
-const player = document.querySelector("#player");
-const musicName = document.querySelector("#musicName");
-const playPauseButton = document.querySelector("#playPauseButton");
-const prevButton = document.querySelector("#prevButton");
-const nextButton = document.querySelector("#nextButton");
-const currentTime = document.querySelector("#currentTime");
-const duration = document.querySelector("#duration");
-const progressBar = document.querySelector(".progressBar");
-const progress = document.querySelector(".progress");
-
-import songs from "./play-1";
-import songs from "./play-2";
-import songs from "./play-3";
-import songs from "./play-4";
-
-const textButtonPlay = "<i class='fa-solid fa-play-circle'></i>";
-const textButtonPause = "<i class='fa-solid fa-pause-circle'></i>";
-
-let index = 0;
-
-prevButton.onclick = () => prevNextMusic("prev");
-nextButton.onclick = () => prevNextMusic ();
-
-playPauseButton.onclick = () => playPause ();
-
-const playPause = () => {
-  if (player.pause) {
-    player.play ();
-    playPauseButton.innerHTML = textButtonPause;
-  }
-
-  else {
-    player.pause();
-    playPauseButton.innerHTML = textButtonPlay;
-  }
-};
-
-player.ontimeupdate = () => updateTime();
-
-const updateTime = () => {
-  const currentMinutes = Math.floor(player.currentTime / 60);
-  const currentSeconds = Math.floor(player.currentTime % 60);
-  currentTime.textContent = currentMinutes + ":" + formatZero(currentSeconds);
-
-  const durationFormatted = isNaN(player.duration) ? 0 : player.duration;
-  const durationMinutes = Math.floor(durationFormatted / 60);
-  const durationSeconds = Math.floor(durationFormatted % 60);
-  duration.textContent = durationMinutes + ":" + formatZero(durationSeconds);
-
-  const progressWidth = durationFormatted
-    ? (player.currentTime / durationFormatted) * 100
-    : 0;
-
-  progress.style.width = progressWidth + "%"; 
-};
-
-const formatZero = (n) => (n <10 ? "0" + n : n);
-
-progressBar.onclick = (e) => {
-  const newTime = (e.offsetX / progressBar.offsetWidth) * player.duration;
-  player.currentTime = newTime;
-};
+export default [
+  // Plug//
+  {
+    src: "./src/music/Brocasito - Tantos Planos [Prod.Stuani & JayPluggz].mp3", 
+    name: "Brocasito - Tantos Planos [Prod.Stuani & JayPluggz]",
+  },
  
-const prevNextMusic = (type = "next") => {
-  if ((type == "next" && index + 1 === play1.length) || type === "init") {
-    index = 0;
-  }
+  {
+    src: "./src/music/Candyboi - Venha com um RichSlime.mp3", 
+    name: "Candyboi - Venha com um RichSlime",
+  },
 
-  else if (type == "prev" && index === 0) {
-    index = songs.length;
-  }
+  {
+    src: "./src/music/Putodiparis - “HILLARY BANKS”.mp3", 
+    name: "Putodiparis - HILLARY BANKS",
+  },
 
-  else {
-    index = type === "prev" && index ? index - 1 : index + 1;
-  }
+  //Sad//
+  {
+    src: "./src/music/XXXTENTACION - infinity (888).mp3", 
+    name: "XXXTENTACION - Infinity (888)",
+  },
 
-  player.src = songs[index].src;
-  musicName.innerHTML = songs[index].name;
-  if (type !== "init") playPause();
+  {
+    src: "./src/music/XXXTENTACION - vice city.mp3", 
+    name: "XXXTENTACION - Vice City",
+  },
 
-  updateTime();
-};
+  {
+    src: "./src/music/Sagun - Trust Nobody (Feat. Shiloh Dynasty).mp3", 
+    name: "Sagun - Trust Nobody (Feat. Shiloh Dynasty)",
+  },
 
-prevNextMusic("init"); 
+  //Baby//
+  {
+    src: "./src/music/Playboi Carti - ILoveUIHateU.mp3", 
+    name: "Playboi Carti - ILoveUIHateU",
+  },
+
+  {
+    src: "./src/music/Lil Uzi Vert - 20 Min.mp3", 
+    name: "Lil Uzi Vert - 20 Min",
+  },
+
+  {
+    src: "./src/music/Cochise - Tell Em (feat. $NOT).mp3", 
+    name: "Cochise - Tell Em (feat. $NOT)",
+  },
+
+  //RnB//
+  {
+    src: "./src/music/Summer Walker - Just Might (Feat. PARTYNEXTDOOR).mp3", 
+    name: "Summer Walker - Just Might (Feat. PARTYNEXTDOOR)",
+  },
+
+  {
+    src: "./src/music/Summer Walker - White Tee.mp3", 
+    name: "Summer Walker - White Tee",
+  },
+
+  {
+    src: "./src/music/act ii_ date @ 8.mp3", 
+    name: "4beatz act ii_ date @ 8",
+  },
+]
